@@ -6,12 +6,24 @@
 //
 
 import UIKit
+import RxSwift
 
 class ViewController: UIViewController {
+    
+    let disposeBag = DisposeBag()
+    
+    static func instantiate() -> ViewController {
+        let storyboard = UIStoryboard(name:"Main", bundle: .main)
+        let viewContoller = storyboard.instantiateInitialViewController() as! ViewController
+        return viewContoller
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let service = PetService()
+        service.fetchPets().subscribe(onNext: { pets in
+            print(pets)
+        }).disposed(by: disposeBag)
     }
 
 
