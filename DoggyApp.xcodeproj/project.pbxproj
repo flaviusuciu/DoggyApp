@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F1A272A290EE28200C98E4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A2729290EE28200C98E4E /* AppDelegate.swift */; };
+		6F1A272C290EE28200C98E4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A272B290EE28200C98E4E /* SceneDelegate.swift */; };
+		6F1A272E290EE28200C98E4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A272D290EE28200C98E4E /* ViewController.swift */; };
+		6F1A2731290EE28200C98E4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1A272F290EE28200C98E4E /* Main.storyboard */; };
+		6F1A2733290EE28500C98E4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1A2732290EE28500C98E4E /* Assets.xcassets */; };
+		6F1A2736290EE28500C98E4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1A2734290EE28500C98E4E /* LaunchScreen.storyboard */; };
+		6F1A2741290EE28500C98E4E /* DoggyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A2740290EE28500C98E4E /* DoggyAppTests.swift */; };
+		6F1A274B290EE28500C98E4E /* DoggyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A274A290EE28500C98E4E /* DoggyAppUITests.swift */; };
+		6F1A274D290EE28500C98E4E /* DoggyAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A274C290EE28500C98E4E /* DoggyAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F1A273D290EE28500C98E4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F1A271E290EE28200C98E4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F1A2725290EE28200C98E4E;
+			remoteInfo = DoggyApp;
+		};
+		6F1A2747290EE28500C98E4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F1A271E290EE28200C98E4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F1A2725290EE28200C98E4E;
+			remoteInfo = DoggyApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F1A2726290EE28200C98E4E /* DoggyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoggyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F1A2729290EE28200C98E4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6F1A272B290EE28200C98E4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6F1A272D290EE28200C98E4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6F1A2730290EE28200C98E4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F1A2732290EE28500C98E4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F1A2735290EE28500C98E4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6F1A2737290EE28500C98E4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F1A273C290EE28500C98E4E /* DoggyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoggyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F1A2740290EE28500C98E4E /* DoggyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoggyAppTests.swift; sourceTree = "<group>"; };
+		6F1A2746290EE28500C98E4E /* DoggyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoggyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F1A274A290EE28500C98E4E /* DoggyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoggyAppUITests.swift; sourceTree = "<group>"; };
+		6F1A274C290EE28500C98E4E /* DoggyAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoggyAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F1A2723290EE28200C98E4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F1A2739290EE28500C98E4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F1A2743290EE28500C98E4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F1A271D290EE28200C98E4E = {
+			isa = PBXGroup;
+			children = (
+				6F1A2728290EE28200C98E4E /* DoggyApp */,
+				6F1A273F290EE28500C98E4E /* DoggyAppTests */,
+				6F1A2749290EE28500C98E4E /* DoggyAppUITests */,
+				6F1A2727290EE28200C98E4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F1A2727290EE28200C98E4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F1A2726290EE28200C98E4E /* DoggyApp.app */,
+				6F1A273C290EE28500C98E4E /* DoggyAppTests.xctest */,
+				6F1A2746290EE28500C98E4E /* DoggyAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F1A2728290EE28200C98E4E /* DoggyApp */ = {
+			isa = PBXGroup;
+			children = (
+				6F1A2729290EE28200C98E4E /* AppDelegate.swift */,
+				6F1A272B290EE28200C98E4E /* SceneDelegate.swift */,
+				6F1A272D290EE28200C98E4E /* ViewController.swift */,
+				6F1A272F290EE28200C98E4E /* Main.storyboard */,
+				6F1A2732290EE28500C98E4E /* Assets.xcassets */,
+				6F1A2734290EE28500C98E4E /* LaunchScreen.storyboard */,
+				6F1A2737290EE28500C98E4E /* Info.plist */,
+			);
+			path = DoggyApp;
+			sourceTree = "<group>";
+		};
+		6F1A273F290EE28500C98E4E /* DoggyAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F1A2740290EE28500C98E4E /* DoggyAppTests.swift */,
+			);
+			path = DoggyAppTests;
+			sourceTree = "<group>";
+		};
+		6F1A2749290EE28500C98E4E /* DoggyAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6F1A274A290EE28500C98E4E /* DoggyAppUITests.swift */,
+				6F1A274C290EE28500C98E4E /* DoggyAppUITestsLaunchTests.swift */,
+			);
+			path = DoggyAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F1A2725290EE28200C98E4E /* DoggyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F1A2750290EE28500C98E4E /* Build configuration list for PBXNativeTarget "DoggyApp" */;
+			buildPhases = (
+				6F1A2722290EE28200C98E4E /* Sources */,
+				6F1A2723290EE28200C98E4E /* Frameworks */,
+				6F1A2724290EE28200C98E4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoggyApp;
+			productName = DoggyApp;
+			productReference = 6F1A2726290EE28200C98E4E /* DoggyApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F1A273B290EE28500C98E4E /* DoggyAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F1A2753290EE28500C98E4E /* Build configuration list for PBXNativeTarget "DoggyAppTests" */;
+			buildPhases = (
+				6F1A2738290EE28500C98E4E /* Sources */,
+				6F1A2739290EE28500C98E4E /* Frameworks */,
+				6F1A273A290EE28500C98E4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F1A273E290EE28500C98E4E /* PBXTargetDependency */,
+			);
+			name = DoggyAppTests;
+			productName = DoggyAppTests;
+			productReference = 6F1A273C290EE28500C98E4E /* DoggyAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6F1A2745290EE28500C98E4E /* DoggyAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F1A2756290EE28500C98E4E /* Build configuration list for PBXNativeTarget "DoggyAppUITests" */;
+			buildPhases = (
+				6F1A2742290EE28500C98E4E /* Sources */,
+				6F1A2743290EE28500C98E4E /* Frameworks */,
+				6F1A2744290EE28500C98E4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F1A2748290EE28500C98E4E /* PBXTargetDependency */,
+			);
+			name = DoggyAppUITests;
+			productName = DoggyAppUITests;
+			productReference = 6F1A2746290EE28500C98E4E /* DoggyAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F1A271E290EE28200C98E4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					6F1A2725290EE28200C98E4E = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					6F1A273B290EE28500C98E4E = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 6F1A2725290EE28200C98E4E;
+					};
+					6F1A2745290EE28500C98E4E = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 6F1A2725290EE28200C98E4E;
+					};
+				};
+			};
+			buildConfigurationList = 6F1A2721290EE28200C98E4E /* Build configuration list for PBXProject "DoggyApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F1A271D290EE28200C98E4E;
+			productRefGroup = 6F1A2727290EE28200C98E4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F1A2725290EE28200C98E4E /* DoggyApp */,
+				6F1A273B290EE28500C98E4E /* DoggyAppTests */,
+				6F1A2745290EE28500C98E4E /* DoggyAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F1A2724290EE28200C98E4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F1A2736290EE28500C98E4E /* LaunchScreen.storyboard in Resources */,
+				6F1A2733290EE28500C98E4E /* Assets.xcassets in Resources */,
+				6F1A2731290EE28200C98E4E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F1A273A290EE28500C98E4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F1A2744290EE28500C98E4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F1A2722290EE28200C98E4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F1A272E290EE28200C98E4E /* ViewController.swift in Sources */,
+				6F1A272A290EE28200C98E4E /* AppDelegate.swift in Sources */,
+				6F1A272C290EE28200C98E4E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F1A2738290EE28500C98E4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F1A2741290EE28500C98E4E /* DoggyAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F1A2742290EE28500C98E4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F1A274D290EE28500C98E4E /* DoggyAppUITestsLaunchTests.swift in Sources */,
+				6F1A274B290EE28500C98E4E /* DoggyAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F1A273E290EE28500C98E4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F1A2725290EE28200C98E4E /* DoggyApp */;
+			targetProxy = 6F1A273D290EE28500C98E4E /* PBXContainerItemProxy */;
+		};
+		6F1A2748290EE28500C98E4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F1A2725290EE28200C98E4E /* DoggyApp */;
+			targetProxy = 6F1A2747290EE28500C98E4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6F1A272F290EE28200C98E4E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F1A2730290EE28200C98E4E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6F1A2734290EE28500C98E4E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F1A2735290EE28500C98E4E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F1A274E290EE28500C98E4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6F1A274F290EE28500C98E4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F1A2751290EE28500C98E4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QUKV9M53YD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DoggyApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FlaviuS.DoggyApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F1A2752290EE28500C98E4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QUKV9M53YD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DoggyApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FlaviuS.DoggyApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6F1A2754290EE28500C98E4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QUKV9M53YD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FlaviuS.DoggyAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoggyApp.app/DoggyApp";
+			};
+			name = Debug;
+		};
+		6F1A2755290EE28500C98E4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QUKV9M53YD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FlaviuS.DoggyAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoggyApp.app/DoggyApp";
+			};
+			name = Release;
+		};
+		6F1A2757290EE28500C98E4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QUKV9M53YD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FlaviuS.DoggyAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DoggyApp;
+			};
+			name = Debug;
+		};
+		6F1A2758290EE28500C98E4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QUKV9M53YD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FlaviuS.DoggyAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DoggyApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F1A2721290EE28200C98E4E /* Build configuration list for PBXProject "DoggyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F1A274E290EE28500C98E4E /* Debug */,
+				6F1A274F290EE28500C98E4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F1A2750290EE28500C98E4E /* Build configuration list for PBXNativeTarget "DoggyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F1A2751290EE28500C98E4E /* Debug */,
+				6F1A2752290EE28500C98E4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F1A2753290EE28500C98E4E /* Build configuration list for PBXNativeTarget "DoggyAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F1A2754290EE28500C98E4E /* Debug */,
+				6F1A2755290EE28500C98E4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F1A2756290EE28500C98E4E /* Build configuration list for PBXNativeTarget "DoggyAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F1A2757290EE28500C98E4E /* Debug */,
+				6F1A2758290EE28500C98E4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F1A271E290EE28200C98E4E /* Project object */;
+}
