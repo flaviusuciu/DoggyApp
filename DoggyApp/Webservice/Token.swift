@@ -9,4 +9,5 @@ struct token: Decodable {
     let token_type: String
     let expires_in: Int
     let access_token: String
+    var isExpired: Bool
 }

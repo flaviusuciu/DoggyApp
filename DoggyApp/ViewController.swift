@@ -21,8 +21,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let service = PetService()
-        service.fetchPets().subscribe(onNext: { pets in
-            print(pets)
+//        service.fetchPets().subscribe(onNext: { pets in
+//            print(pets)
+//        }).disposed(by: disposeBag)
+        service.fetchToken().subscribe(onNext: { token in
+            print(token)
         }).disposed(by: disposeBag)
     }
 

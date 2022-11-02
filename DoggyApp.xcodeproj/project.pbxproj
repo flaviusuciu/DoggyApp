@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F3502D7E07362F036EFA278 /* Pods_DoggyApp_DoggyAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25EBF033809FB2CDC207DA7C /* Pods_DoggyApp_DoggyAppUITests.framework */; };
+		079DC0BA3F87712976A50F10 /* libPods-DoggyAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1CA8793CC78AA0F9A9E9368 /* libPods-DoggyAppTests.a */; };
+		2C320F57BB7AFBA1AAA225BB /* libPods-DoggyApp-DoggyAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 285BC809616A16116FD9F4D1 /* libPods-DoggyApp-DoggyAppUITests.a */; };
 		6F1A272A290EE28200C98E4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A2729290EE28200C98E4E /* AppDelegate.swift */; };
 		6F1A272C290EE28200C98E4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A272B290EE28200C98E4E /* SceneDelegate.swift */; };
 		6F1A272E290EE28200C98E4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A272D290EE28200C98E4E /* ViewController.swift */; };
@@ -21,8 +22,7 @@
 		6F1A275C290EF0A300C98E4E /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A275B290EF0A300C98E4E /* Pet.swift */; };
 		6F1A275E290EF16D00C98E4E /* PetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A275D290EF16D00C98E4E /* PetService.swift */; };
 		6F1A2761290EFC8700C98E4E /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A2760290EFC8700C98E4E /* Token.swift */; };
-		A66AEEB91EDC4F15ECAAC024 /* Pods_DoggyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9315B2753B101EB9CCFDB6AD /* Pods_DoggyApp.framework */; };
-		CD47E8FB0372E808402730D9 /* Pods_DoggyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A83AFA82469ACBD2ECE68FFE /* Pods_DoggyAppTests.framework */; };
+		8AF0846A11B2D96B3CB83DEE /* libPods-DoggyApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B24B60CE0A7EDB63C7D422CE /* libPods-DoggyApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,7 @@
 
 /* Begin PBXFileReference section */
 		0EC1B5E31483D30430C20682 /* Pods-DoggyAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoggyAppTests.release.xcconfig"; path = "Target Support Files/Pods-DoggyAppTests/Pods-DoggyAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		25EBF033809FB2CDC207DA7C /* Pods_DoggyApp_DoggyAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoggyApp_DoggyAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		285BC809616A16116FD9F4D1 /* libPods-DoggyApp-DoggyAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoggyApp-DoggyAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CAB80418EDE3774745789CB /* Pods-DoggyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoggyAppTests.debug.xcconfig"; path = "Target Support Files/Pods-DoggyAppTests/Pods-DoggyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6F1A2726290EE28200C98E4E /* DoggyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoggyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F1A2729290EE28200C98E4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,9 +64,9 @@
 		6F1A275D290EF16D00C98E4E /* PetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetService.swift; sourceTree = "<group>"; };
 		6F1A2760290EFC8700C98E4E /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		7C690CEDC7FCC394BDD10841 /* Pods-DoggyApp-DoggyAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoggyApp-DoggyAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-DoggyApp-DoggyAppUITests/Pods-DoggyApp-DoggyAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		9315B2753B101EB9CCFDB6AD /* Pods_DoggyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoggyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A83AFA82469ACBD2ECE68FFE /* Pods_DoggyAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoggyAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B24B60CE0A7EDB63C7D422CE /* libPods-DoggyApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoggyApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F749A246817B3B4E7B0BE4 /* Pods-DoggyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoggyApp.debug.xcconfig"; path = "Target Support Files/Pods-DoggyApp/Pods-DoggyApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F1CA8793CC78AA0F9A9E9368 /* libPods-DoggyAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoggyAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9EF1C9BB2C93FAED83B3870 /* Pods-DoggyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoggyApp.release.xcconfig"; path = "Target Support Files/Pods-DoggyApp/Pods-DoggyApp.release.xcconfig"; sourceTree = "<group>"; };
 		FC73B478D3A179A1729A5A49 /* Pods-DoggyApp-DoggyAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoggyApp-DoggyAppUITests.release.xcconfig"; path = "Target Support Files/Pods-DoggyApp-DoggyAppUITests/Pods-DoggyApp-DoggyAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A66AEEB91EDC4F15ECAAC024 /* Pods_DoggyApp.framework in Frameworks */,
+				8AF0846A11B2D96B3CB83DEE /* libPods-DoggyApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD47E8FB0372E808402730D9 /* Pods_DoggyAppTests.framework in Frameworks */,
+				079DC0BA3F87712976A50F10 /* libPods-DoggyAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F3502D7E07362F036EFA278 /* Pods_DoggyApp_DoggyAppUITests.framework in Frameworks */,
+				2C320F57BB7AFBA1AAA225BB /* libPods-DoggyApp-DoggyAppUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,9 +102,9 @@
 		670563B2573389873B6542DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9315B2753B101EB9CCFDB6AD /* Pods_DoggyApp.framework */,
-				25EBF033809FB2CDC207DA7C /* Pods_DoggyApp_DoggyAppUITests.framework */,
-				A83AFA82469ACBD2ECE68FFE /* Pods_DoggyAppTests.framework */,
+				B24B60CE0A7EDB63C7D422CE /* libPods-DoggyApp.a */,
+				285BC809616A16116FD9F4D1 /* libPods-DoggyApp-DoggyAppUITests.a */,
+				F1CA8793CC78AA0F9A9E9368 /* libPods-DoggyAppTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -198,7 +198,6 @@
 				6F1A2722290EE28200C98E4E /* Sources */,
 				6F1A2723290EE28200C98E4E /* Frameworks */,
 				6F1A2724290EE28200C98E4E /* Resources */,
-				266D8DF901CF1EC3CE3DEF27 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,7 +235,6 @@
 				6F1A2742290EE28500C98E4E /* Sources */,
 				6F1A2743290EE28500C98E4E /* Frameworks */,
 				6F1A2744290EE28500C98E4E /* Resources */,
-				9FF34FE0CE65B5717D32AD5D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -319,23 +317,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		266D8DF901CF1EC3CE3DEF27 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DoggyApp/Pods-DoggyApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DoggyApp/Pods-DoggyApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DoggyApp/Pods-DoggyApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		667D3E4A69A95587E5DBD97E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -356,23 +337,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9FF34FE0CE65B5717D32AD5D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DoggyApp-DoggyAppUITests/Pods-DoggyApp-DoggyAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DoggyApp-DoggyAppUITests/Pods-DoggyApp-DoggyAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DoggyApp-DoggyAppUITests/Pods-DoggyApp-DoggyAppUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CA6C2DC00ADC6E199187DC2B /* [CP] Check Pods Manifest.lock */ = {
