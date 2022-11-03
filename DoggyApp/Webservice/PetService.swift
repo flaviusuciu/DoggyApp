@@ -22,7 +22,7 @@ class PetService {
             let body = "grant_type=client_credentials&client_id=\(username)&client_secret=\(password)"
             let finalBody = body.data(using: String.Encoding.utf8)
             
-            var request = URLRequest(url: url!)
+            var request = URLRequest(url: url!) //TODO: fix unwrap
             request.httpMethod = "POST"
             request.httpBody = finalBody
             
@@ -54,9 +54,18 @@ class PetService {
         }
     }
     
-    func fetchPets() -> Observable<[pet]> {
+    func fetchPets() -> Observable<animal> {
         return Observable.create { observer -> Disposable in
-            let task = URLSession.shared.dataTask(with: URL(string: "")!) { data, _, error in
+            let token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI4RnZCOTJDT0wzbG9Ka1JIQm96R1BMT1ZLWlRHNENnWGFsNkRvdTZFanNINWxqMlNYQiIsImp0aSI6IjU0OGUyM2U2OGMwNzBkMWViZGQwM2E2NzNmYTMzNTdkNDI3ZTlhOWJiMzMzZDIzYWRjMzVjZTBlNTc5Yjc0MzMyZTUxMDk3N2JhYWQ4NTU3IiwiaWF0IjoxNjY3NDg3ODkxLCJuYmYiOjE2Njc0ODc4OTEsImV4cCI6MTY2NzQ5MTQ5MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.RdQBnaYdnsZUkh4NEFPqgAE7FU_MSZXKreFrAqdXN3KQfC5FZOY6RolP9XzeJyUHu47nMSWUy8QVDL4zoW2hHJqvQbbKyC--osH9_uUsxa9QMYug0gdgdcImL_TbNuHN1Wqz93iCoP8xN6nLKeQn0ODJninvzhGlKx4gse-PghWA9PkinwrhXJMBlLUJDmpDDpan2bwKLaWOySAWIJc80KNFNCYGR-Coj1ZM5xPMGge5tr0TAAxRbojVeWPE7VkkkdFR7LnucnSLkVZqlIuEQAaXGENMG6HwG7Kaap5L5jS2QHvUwurqAtbJ1LC1ElZmezpmHfFiYxiG4PuzASrd2Q"
+            let url = URL(string: "https://api.petfinder.com/v2/animals")
+            let header = "Bearer \(token)"
+            
+            var request = URLRequest(url: url!) //TODO: fix unwrap
+            request.httpMethod = "GET"
+            request.setValue(header, forHTTPHeaderField: "Authorization")
+
+            
+            let task = URLSession.shared.dataTask(with: request) { data, response, error in
                 
                 guard let data = data else {
                     observer.onError(NSError(domain: "", code: -1, userInfo: nil))
@@ -64,8 +73,8 @@ class PetService {
                 }
                 
                 do {
-                    let pets = try JSONDecoder().decode([pet].self, from: data)
-                    observer.onNext(pets)
+                    let pets = try JSONDecoder().decode(Result.self, from: data)
+                    observer.onNext(pets.animals.first!) //TODO: fix unwrap
                 } catch {
                     observer.onError(error)
                 }

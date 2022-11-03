@@ -5,13 +5,22 @@
 //  Created by Flaviu Adrian Suciu on 30.10.2022.
 //
 
-struct pet: Decodable {
+struct Result: Codable {
+    var animals: [animal]
+}
+
+struct animal: Codable {
     let name: String
-    let breed: String
+    let breeds: breeds
     let size: String
     let gender: String
     let status: String
-    let distance: Int
+    let distance: Int?
+}
+
+struct breeds: Codable {
+    let primary: String?
+    let secondary: String?
 }
 
 
