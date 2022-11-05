@@ -10,7 +10,11 @@ import RxSwift
 import UIKit
 import Security
 
-class PetService {
+protocol PetsServiceProtocol {
+    func fetchPets() -> Observable<[animal]>
+}
+
+class PetService: PetsServiceProtocol {
     
     private lazy var dateFormatter = DateFormatter()
     
@@ -54,9 +58,9 @@ class PetService {
         }
     }
     
-    func fetchPets() -> Observable<animal> {
+    func fetchPets() -> Observable<[animal]> {
         return Observable.create { observer -> Disposable in
-            let token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI4RnZCOTJDT0wzbG9Ka1JIQm96R1BMT1ZLWlRHNENnWGFsNkRvdTZFanNINWxqMlNYQiIsImp0aSI6IjU0OGUyM2U2OGMwNzBkMWViZGQwM2E2NzNmYTMzNTdkNDI3ZTlhOWJiMzMzZDIzYWRjMzVjZTBlNTc5Yjc0MzMyZTUxMDk3N2JhYWQ4NTU3IiwiaWF0IjoxNjY3NDg3ODkxLCJuYmYiOjE2Njc0ODc4OTEsImV4cCI6MTY2NzQ5MTQ5MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.RdQBnaYdnsZUkh4NEFPqgAE7FU_MSZXKreFrAqdXN3KQfC5FZOY6RolP9XzeJyUHu47nMSWUy8QVDL4zoW2hHJqvQbbKyC--osH9_uUsxa9QMYug0gdgdcImL_TbNuHN1Wqz93iCoP8xN6nLKeQn0ODJninvzhGlKx4gse-PghWA9PkinwrhXJMBlLUJDmpDDpan2bwKLaWOySAWIJc80KNFNCYGR-Coj1ZM5xPMGge5tr0TAAxRbojVeWPE7VkkkdFR7LnucnSLkVZqlIuEQAaXGENMG6HwG7Kaap5L5jS2QHvUwurqAtbJ1LC1ElZmezpmHfFiYxiG4PuzASrd2Q"
+            let token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI4RnZCOTJDT0wzbG9Ka1JIQm96R1BMT1ZLWlRHNENnWGFsNkRvdTZFanNINWxqMlNYQiIsImp0aSI6ImI3ZTUwYjQyOTE0ZmU0OTcyNDM0YTNiZDU3YWVmYjc2ZDMzNjhiMjViMDQxMGVkNTBiMGI4YTYyNzU4YmJkOWExOTczYmNkMTFiNTMyMWIwIiwiaWF0IjoxNjY3NjcxODgxLCJuYmYiOjE2Njc2NzE4ODEsImV4cCI6MTY2NzY3NTQ4MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.GPL33T3uSNIrHcl8D1xlZPOwBkYg3TmR_N1bpGilTgxp0KRMRqiR1ot2f8y4nKt7d4IKm9fWELXU2DUMUlRGAesnVp4iOCaNh4gRbnF1nku_fW4_zAYmckv7JZfYDyXHZpjCM53nSzljJD_jjPu-Clu8Ro0TUY_2eYD574WwShOLKDPqkZJVUiKJ0R7cg6Hb2MxRnE0IuIqOTP5nkh_f3ky-ZfnrHXToFWGD9oEaCtQNRCWHOTzreisRxHs4UNb2ok_JvpbvI8wdYoMVN40XhN6OtprhhEnASaRct-vM4akGkMJBKrqUIs1yklOwGQIOP6JVsg5gX8yq7aY4NPzvmw"
             let url = URL(string: "https://api.petfinder.com/v2/animals")
             let header = "Bearer \(token)"
             
@@ -74,7 +78,7 @@ class PetService {
                 
                 do {
                     let pets = try JSONDecoder().decode(Result.self, from: data)
-                    observer.onNext(pets.animals.first!) //TODO: fix unwrap
+                    observer.onNext(pets.animals)
                 } catch {
                     observer.onError(error)
                 }

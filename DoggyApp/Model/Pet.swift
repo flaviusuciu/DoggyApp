@@ -16,6 +16,7 @@ struct animal: Codable {
     let gender: String
     let status: String
     let distance: Int?
+    let species: String
 }
 
 struct breeds: Codable {

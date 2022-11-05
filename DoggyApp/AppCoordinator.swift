@@ -15,7 +15,7 @@ class AppCoordinator {
     }
     
     func start () {
-        let viewController = ViewController.instantiate()
+        let viewController = PetsListViewController.instantiate(viewModel: PetsListViewModel())
         let navigationContorller = UINavigationController(rootViewController: viewController)
         window.rootViewController = navigationContorller
         window.makeKeyAndVisible()
