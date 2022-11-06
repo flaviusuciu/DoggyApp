@@ -5,14 +5,12 @@
 //  Created by Flaviu Adrian Suciu on 03.11.2022.
 //
 
-import Foundation
-
 struct PetsViewModel {
     
-    private let animal: animal
+    let animal: animal
     
     var displayText: String {
-        return "\(animal.name) - \(animal.species)"
+        return "\(animal.name ?? "Unknown") - \(animal.species ?? "animal") "
     }
     
     init(pet: animal) {

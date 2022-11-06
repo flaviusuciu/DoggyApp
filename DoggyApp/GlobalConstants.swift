@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 struct GlobalConstants {
+    static let localPetsDateFormat = "yyyy-MM-dd HH:mm:ss"
     static let localPetsTitle = "Local Pets"
     static let petFinderPurple = UIColor(red: CGFloat(91)/255, green: CGFloat(28)/255, blue: CGFloat(174)/255, alpha: 1)
 }

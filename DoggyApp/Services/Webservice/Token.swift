@@ -5,9 +5,13 @@
 //  Created by Flaviu Adrian Suciu on 30.10.2022.
 //
 
-struct token: Decodable {
+struct decodedToken: Codable {
+    let token : token
+    var isExpired: Bool
+}
+
+struct token: Codable {
     let token_type: String
     let expires_in: Int
     let access_token: String
-    var isExpired: Bool
 }

@@ -10,13 +10,14 @@ struct Result: Codable {
 }
 
 struct animal: Codable {
-    let name: String
+    let name: String?
     let breeds: breeds
-    let size: String
-    let gender: String
-    let status: String
+    let size: String?
+    let gender: String?
+    let status: String?
     let distance: Int?
-    let species: String
+    let species: String?
+    let photos: [photo]?
 }
 
 struct breeds: Codable {
@@ -24,4 +25,9 @@ struct breeds: Codable {
     let secondary: String?
 }
 
+struct photo: Codable {
+    let small: String
+    let medium: String
+    let large: String
+}
 

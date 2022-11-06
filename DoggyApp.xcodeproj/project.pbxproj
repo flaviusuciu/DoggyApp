@@ -12,6 +12,9 @@
 		6F155B42291420A80013B212 /* PetsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F155B41291420A80013B212 /* PetsListViewModel.swift */; };
 		6F155B44291422320013B212 /* PetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F155B43291422320013B212 /* PetsViewModel.swift */; };
 		6F155B4629142A210013B212 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F155B4529142A210013B212 /* GlobalConstants.swift */; };
+		6F155B4C2916DF9E0013B212 /* PetsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F155B4B2916DF9E0013B212 /* PetsDetailsViewController.swift */; };
+		6F155B52291718E00013B212 /* PetsPersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F155B51291718E00013B212 /* PetsPersistencyManager.swift */; };
+		6F155B5829181FFC0013B212 /* PetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F155B5729181FFC0013B212 /* PetsTableViewCell.swift */; };
 		6F1A272A290EE28200C98E4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A2729290EE28200C98E4E /* AppDelegate.swift */; };
 		6F1A272C290EE28200C98E4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A272B290EE28200C98E4E /* SceneDelegate.swift */; };
 		6F1A272E290EE28200C98E4E /* PetsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A272D290EE28200C98E4E /* PetsListViewController.swift */; };
@@ -25,6 +28,7 @@
 		6F1A275C290EF0A300C98E4E /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A275B290EF0A300C98E4E /* Pet.swift */; };
 		6F1A275E290EF16D00C98E4E /* PetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A275D290EF16D00C98E4E /* PetService.swift */; };
 		6F1A2761290EFC8700C98E4E /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A2760290EFC8700C98E4E /* Token.swift */; };
+		6F653142291ACB6200A1E963 /* KeychainHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F653141291ACB6100A1E963 /* KeychainHandler.swift */; };
 		8AF0846A11B2D96B3CB83DEE /* libPods-DoggyApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B24B60CE0A7EDB63C7D422CE /* libPods-DoggyApp.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +56,9 @@
 		6F155B41291420A80013B212 /* PetsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsListViewModel.swift; sourceTree = "<group>"; };
 		6F155B43291422320013B212 /* PetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsViewModel.swift; sourceTree = "<group>"; };
 		6F155B4529142A210013B212 /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		6F155B4B2916DF9E0013B212 /* PetsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsDetailsViewController.swift; sourceTree = "<group>"; };
+		6F155B51291718E00013B212 /* PetsPersistencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsPersistencyManager.swift; sourceTree = "<group>"; };
+		6F155B5729181FFC0013B212 /* PetsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsTableViewCell.swift; sourceTree = "<group>"; };
 		6F1A2726290EE28200C98E4E /* DoggyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoggyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F1A2729290EE28200C98E4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F1A272B290EE28200C98E4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +76,7 @@
 		6F1A275B290EF0A300C98E4E /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		6F1A275D290EF16D00C98E4E /* PetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetService.swift; sourceTree = "<group>"; };
 		6F1A2760290EFC8700C98E4E /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		6F653141291ACB6100A1E963 /* KeychainHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHandler.swift; sourceTree = "<group>"; };
 		7C690CEDC7FCC394BDD10841 /* Pods-DoggyApp-DoggyAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoggyApp-DoggyAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-DoggyApp-DoggyAppUITests/Pods-DoggyApp-DoggyAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B24B60CE0A7EDB63C7D422CE /* libPods-DoggyApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoggyApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F749A246817B3B4E7B0BE4 /* Pods-DoggyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoggyApp.debug.xcconfig"; path = "Target Support Files/Pods-DoggyApp/Pods-DoggyApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +134,8 @@
 		6F155B3F291420520013B212 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				6F155B51291718E00013B212 /* PetsPersistencyManager.swift */,
+				6F653141291ACB6100A1E963 /* KeychainHandler.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -136,6 +146,39 @@
 				6F1A275F290EFC6B00C98E4E /* Webservice */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		6F155B4D2916DFA40013B212 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6F155B4B2916DF9E0013B212 /* PetsDetailsViewController.swift */,
+				6F1A272D290EE28200C98E4E /* PetsListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6F155B4E2916F0DF0013B212 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6F155B41291420A80013B212 /* PetsListViewModel.swift */,
+				6F155B43291422320013B212 /* PetsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6F155B5529171DCE0013B212 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6F155B5629181F940013B212 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				6F155B5729181FFC0013B212 /* PetsTableViewCell.swift */,
+			);
+			path = VIew;
 			sourceTree = "<group>";
 		};
 		6F1A271D290EE28200C98E4E = {
@@ -172,11 +215,12 @@
 				6F1A272F290EE28200C98E4E /* Main.storyboard */,
 				6F155B3D291420030013B212 /* Model */,
 				6F155B3F291420520013B212 /* Persistence */,
-				6F155B41291420A80013B212 /* PetsListViewModel.swift */,
-				6F155B43291422320013B212 /* PetsViewModel.swift */,
+				6F155B5529171DCE0013B212 /* Resources */,
 				6F1A272B290EE28200C98E4E /* SceneDelegate.swift */,
 				6F155B40291420640013B212 /* Services */,
-				6F1A272D290EE28200C98E4E /* PetsListViewController.swift */,
+				6F155B5629181F940013B212 /* VIew */,
+				6F155B4D2916DFA40013B212 /* ViewControllers */,
+				6F155B4E2916F0DF0013B212 /* ViewModel */,
 			);
 			path = DoggyApp;
 			sourceTree = "<group>";
@@ -427,10 +471,14 @@
 				6F1A2761290EFC8700C98E4E /* Token.swift in Sources */,
 				6F155B4629142A210013B212 /* GlobalConstants.swift in Sources */,
 				6F1A272E290EE28200C98E4E /* PetsListViewController.swift in Sources */,
+				6F653142291ACB6200A1E963 /* KeychainHandler.swift in Sources */,
 				6F1A272A290EE28200C98E4E /* AppDelegate.swift in Sources */,
 				6F1A275E290EF16D00C98E4E /* PetService.swift in Sources */,
 				6F1A275C290EF0A300C98E4E /* Pet.swift in Sources */,
+				6F155B4C2916DF9E0013B212 /* PetsDetailsViewController.swift in Sources */,
 				6F155B44291422320013B212 /* PetsViewModel.swift in Sources */,
+				6F155B52291718E00013B212 /* PetsPersistencyManager.swift in Sources */,
+				6F155B5829181FFC0013B212 /* PetsTableViewCell.swift in Sources */,
 				6F155B42291420A80013B212 /* PetsListViewModel.swift in Sources */,
 				6F1A272C290EE28200C98E4E /* SceneDelegate.swift in Sources */,
 			);

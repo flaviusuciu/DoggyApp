@@ -7,13 +7,26 @@
 
 import UIKit
 
+extension UIApplication {
+        class func isFirstLaunch() -> Bool {
+            if !UserDefaults.standard.bool(forKey: "hasBeenLaunchedBeforeFlag") {
+                UserDefaults.standard.set(true, forKey: "hasBeenLaunchedBeforeFlag")
+                UserDefaults.standard.synchronize()
+                return true
+            }
+            return false
+        }
+    }
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+    if UIApplication.isFirstLaunch() {
+            PersistanceManager.shared.fetchTokenFromWebServiceAndSave() //fetch token
+    } else {
+            PersistanceManager.shared.checkTokenValidityAndRefetchIfNeeded() //check if current token expired and if so, refetch
+    }
         return true
     }
 
