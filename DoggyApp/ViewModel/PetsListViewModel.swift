@@ -9,6 +9,7 @@ import RxSwift
 
 final class PetsListViewModel {
     let title = GlobalConstants.localPetsTitle
+    //private (set) var petModels: Observable<[PetsViewModel]>?
     
     private let petsService: PetsServiceProtocol
     

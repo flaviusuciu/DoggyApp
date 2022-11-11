@@ -59,9 +59,10 @@ class PetService: PetsServiceProtocol {
     
     func fetchPets() -> Observable<[animal]> {
         return Observable.create { observer -> Disposable in
-            let token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI4RnZCOTJDT0wzbG9Ka1JIQm96R1BMT1ZLWlRHNENnWGFsNkRvdTZFanNINWxqMlNYQiIsImp0aSI6ImRiZjYyMzY3YTI1YjU2ZTNkM2M0NzI4YWRmZTBkNDgyZWZlMGRmNmE3NTczMzM3ZDQ4N2Y1ZGUwM2UwOGEwOGI5YTYzNzBiZDM2ODk0YjJmIiwiaWF0IjoxNjY3OTQ2MjAxLCJuYmYiOjE2Njc5NDYyMDEsImV4cCI6MTY2Nzk0OTgwMSwic3ViIjoiIiwic2NvcGVzIjpbXX0.iAs9EqeCvDyDv1YB5xJxjF4MybiQkD_oCjXy6r0cM8I6toj3bGg1cVliGfpIZciT5fyWz5U7vAqs2IT3BM7UjyNrNlolGqAuQ8QBflVTzOteSG1zPxfvswmdhzpr8nCv3DoBw6x_CIHJCzqmI8iHkDZQSShTfayXU4DrBQkJbDGJZ2O0fFULFFsFT8S4IuCbhXDOrKJSxyqdmVj7inOjr9b2UVwnAKSp9ZL0YgMgNx3Y7w5N9H6RDEsxac-yzv1XcmIy8V8A8sy2XGnvdFtC_SrwGXEtTyKUU_c5_l0eDXFv1ntOpMexDmAAneREErc-6pqSCs3w4ZkvhiWs0xVJFQ"
+            //TODO: check for PersistanceManager.shared.currentTokenIsActive
+            let token = PersistanceManager.shared.currentToken?.token.access_token
             let url = URL(string: "https://api.petfinder.com/v2/animals")
-            let header = "Bearer \(token)"
+            let header = "Bearer \(token ?? "")"
             
             var request = URLRequest(url: url!) //TODO: fix unwrap
             request.httpMethod = "GET"

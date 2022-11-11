@@ -20,7 +20,6 @@
 		6F1A272E290EE28200C98E4E /* PetsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A272D290EE28200C98E4E /* PetsListViewController.swift */; };
 		6F1A2731290EE28200C98E4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1A272F290EE28200C98E4E /* Main.storyboard */; };
 		6F1A2733290EE28500C98E4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1A2732290EE28500C98E4E /* Assets.xcassets */; };
-		6F1A2736290EE28500C98E4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1A2734290EE28500C98E4E /* LaunchScreen.storyboard */; };
 		6F1A2741290EE28500C98E4E /* DoggyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A2740290EE28500C98E4E /* DoggyAppTests.swift */; };
 		6F1A274B290EE28500C98E4E /* DoggyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A274A290EE28500C98E4E /* DoggyAppUITests.swift */; };
 		6F1A274D290EE28500C98E4E /* DoggyAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A274C290EE28500C98E4E /* DoggyAppUITestsLaunchTests.swift */; };
@@ -29,6 +28,7 @@
 		6F1A275E290EF16D00C98E4E /* PetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A275D290EF16D00C98E4E /* PetService.swift */; };
 		6F1A2761290EFC8700C98E4E /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A2760290EFC8700C98E4E /* Token.swift */; };
 		6F653142291ACB6200A1E963 /* KeychainHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F653141291ACB6100A1E963 /* KeychainHandler.swift */; };
+		6F653144291B184D00A1E963 /* PetFinderAccess.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6F653143291B184D00A1E963 /* PetFinderAccess.plist */; };
 		8AF0846A11B2D96B3CB83DEE /* libPods-DoggyApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B24B60CE0A7EDB63C7D422CE /* libPods-DoggyApp.a */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +65,6 @@
 		6F1A272D290EE28200C98E4E /* PetsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsListViewController.swift; sourceTree = "<group>"; };
 		6F1A2730290EE28200C98E4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F1A2732290EE28500C98E4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6F1A2735290EE28500C98E4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F1A2737290EE28500C98E4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F1A273C290EE28500C98E4E /* DoggyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoggyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F1A2740290EE28500C98E4E /* DoggyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoggyAppTests.swift; sourceTree = "<group>"; };
@@ -77,6 +76,7 @@
 		6F1A275D290EF16D00C98E4E /* PetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetService.swift; sourceTree = "<group>"; };
 		6F1A2760290EFC8700C98E4E /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		6F653141291ACB6100A1E963 /* KeychainHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHandler.swift; sourceTree = "<group>"; };
+		6F653143291B184D00A1E963 /* PetFinderAccess.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PetFinderAccess.plist; sourceTree = "<group>"; };
 		7C690CEDC7FCC394BDD10841 /* Pods-DoggyApp-DoggyAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoggyApp-DoggyAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-DoggyApp-DoggyAppUITests/Pods-DoggyApp-DoggyAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B24B60CE0A7EDB63C7D422CE /* libPods-DoggyApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoggyApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F749A246817B3B4E7B0BE4 /* Pods-DoggyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoggyApp.debug.xcconfig"; path = "Target Support Files/Pods-DoggyApp/Pods-DoggyApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -169,6 +169,7 @@
 		6F155B5529171DCE0013B212 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6F653143291B184D00A1E963 /* PetFinderAccess.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -211,7 +212,6 @@
 				6F1A2732290EE28500C98E4E /* Assets.xcassets */,
 				6F155B4529142A210013B212 /* GlobalConstants.swift */,
 				6F1A2737290EE28500C98E4E /* Info.plist */,
-				6F1A2734290EE28500C98E4E /* LaunchScreen.storyboard */,
 				6F1A272F290EE28200C98E4E /* Main.storyboard */,
 				6F155B3D291420030013B212 /* Model */,
 				6F155B3F291420520013B212 /* Persistence */,
@@ -371,8 +371,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F1A2736290EE28500C98E4E /* LaunchScreen.storyboard in Resources */,
 				6F1A2733290EE28500C98E4E /* Assets.xcassets in Resources */,
+				6F653144291B184D00A1E963 /* PetFinderAccess.plist in Resources */,
 				6F1A2731290EE28200C98E4E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,14 +523,6 @@
 				6F1A2730290EE28200C98E4E /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		6F1A2734290EE28500C98E4E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6F1A2735290EE28500C98E4E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -22,11 +22,6 @@ extension UIApplication {
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    if UIApplication.isFirstLaunch() {
-            PersistanceManager.shared.fetchTokenFromWebServiceAndSave() //fetch token
-    } else {
-            PersistanceManager.shared.checkTokenValidityAndRefetchIfNeeded() //check if current token expired and if so, refetch
-    }
         return true
     }
 

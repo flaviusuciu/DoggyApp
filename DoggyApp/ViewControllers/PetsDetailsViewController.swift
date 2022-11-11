@@ -88,14 +88,6 @@ class PetsDetailsViewController: UIViewController {
         adoptMeButton.tintColor = GlobalConstants.petFinderPurple
         adoptMeButton.layer.cornerRadius = 12
         adoptMeButton.translatesAutoresizingMaskIntoConstraints = false
-        
-//        let constraints = [
-//            adoptMeButton.bottomAnchor.constraint(greaterThanOrEqualTo: view.bottomAnchor, constant: 10),
-//            adoptMeButton.centerXAnchor.constraint(equalTo:view.centerXAnchor),
-//            adoptMeButton.widthAnchor.constraint (equalToConstant: 200),
-//            adoptMeButton.heightAnchor.constraint (equalToConstant: 60),
-//        ]
-//        NSLayoutConstraint.activate(constraints)
         adoptMeButton.addTarget(self, action: #selector(self.adoptMeButtonAction(sender:)), for: .touchUpInside)
     }
     

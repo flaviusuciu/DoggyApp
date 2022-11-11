@@ -18,6 +18,7 @@ class PersistanceManager {
     var apiSecret: String
     private let bearerKey = "Bearer"
     lazy var currentToken : decodedToken? = nil
+    lazy var currentTokenIsActive = false
     private lazy var disposeBag = DisposeBag()
     private lazy var dateFormatter = DateFormatter(dateFormat: GlobalConstants.localPetsDateFormat)
 
@@ -35,12 +36,19 @@ class PersistanceManager {
         self.apiSecret = keySecret
     }
     
-    func fetchTokenFromWebServiceAndSave() {
-        PetService().fetchToken(apiKey: self.apiKey, apiSecret: self.apiSecret).subscribe(onNext: { token in
+    func fetchTokenFromWebServiceAndSave() -> Observable<Bool> {
+        return Observable.create { observer -> Disposable in
+         PetService().fetchToken(apiKey: self.apiKey, apiSecret: self.apiSecret).subscribe(onNext: { token in
             self.saveToken(decodedToken: token)
+            self.currentToken = token
+            self.currentTokenIsActive = true
+            observer.onNext(true)
         }, onError: { error in
-            print(error)
-        }).disposed(by: disposeBag)
+            print(error) //handle this for token fetch failure on UI
+            observer.onNext(false)
+        }).disposed(by: self.disposeBag)
+            return Disposables.create { }
+        }
     }
 
     func saveToken(decodedToken: decodedToken) {
@@ -67,25 +75,35 @@ class PersistanceManager {
             }
     }
     
-    func checkTokenValidityAndRefetchIfNeeded() {
-        guard let existingToken = KeyChain.load(key: "token"), let expirationDateStringData = KeyChain.load(key: "expiration") else {
-            fetchTokenFromWebServiceAndSave()
-            return
-        }
-        if let dateFromTokenExpirationString = String(data: expirationDateStringData, encoding: .utf8),
-           let accessToken = String(data: existingToken, encoding: .utf8),
-           let expirationDate = self.dateFormatter.date(from: dateFromTokenExpirationString){
-            if Date.now < expirationDate {
-                self.currentToken = decodedToken(token: token(token_type: self.bearerKey,
-                                                              expires_in: Int(expirationDate - Date.now),
-                                                              access_token: accessToken), isExpired: false)
-            } else {
-                fetchTokenFromWebServiceAndSave()
-                return
+    func checkTokenValidityAndRefetchIfNeeded() -> Observable<Bool> {
+        return Observable.create { observer -> Disposable in
+            guard let existingToken = KeyChain.load(key: "token"), let expirationDateStringData = KeyChain.load(key: "expiration") else {
+                self.fetchTokenFromWebServiceAndSave().subscribe(onNext: { hasFetched in
+                    observer.onNext(hasFetched)
+                }).disposed(by: self.disposeBag)
+                return Disposables.create { }
             }
-        } else {
-            fetchTokenFromWebServiceAndSave()
-            return
+    
+            if let dateFromTokenExpirationString = String(data: expirationDateStringData, encoding: .utf8),
+               let accessToken = String(data: existingToken, encoding: .utf8),
+               let expirationDate = self.dateFormatter.date(from: dateFromTokenExpirationString){
+                if Date.now < expirationDate {
+                    self.currentToken = decodedToken(token: token(token_type: self.bearerKey,
+                                                                  expires_in: Int(expirationDate - Date.now),
+                                                                  access_token: accessToken), isExpired: false)
+                    self.currentTokenIsActive = true
+                    observer.onNext(true)
+                } else {
+                    self.fetchTokenFromWebServiceAndSave().subscribe(onNext: { hasFetched in
+                        observer.onNext(hasFetched)
+                    }).disposed(by: self.disposeBag)
+                }
+            } else {
+                self.fetchTokenFromWebServiceAndSave().subscribe(onNext: { hasFetched in
+                    observer.onNext(hasFetched)
+                }).disposed(by: self.disposeBag)
+            }
+            return Disposables.create { }
         }
     }
     
